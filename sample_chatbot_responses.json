@@ -1,0 +1,26 @@
+[
+    {
+        "query_text": "How do I reset my password?",
+        "retrieved_response": "You can reset your password by clicking 'Forgot Password' on the login page.",
+        "timestamp": "2026-04-12T12:55:07Z",
+        "confidence_score": 0.83
+    },
+    {
+        "query_text": "What are your business hours?",
+        "retrieved_response": "Our business hours are from 9:00 AM to 5:00 PM, Monday to Friday.",
+        "timestamp": "2026-04-12T12:55:07Z",
+        "confidence_score": 0.56
+    },
+    {
+        "query_text": "When can I talk to someone from support?",
+        "retrieved_response": "You can talk to someone from support during our operating hours, which are typically Monday to Friday from 9am to 5pm.",
+        "timestamp": "2026-04-12T12:55:09Z",
+        "confidence_score": 0.68
+    },
+    {
+        "query_text": "Can I get a refund if I downloaded the software?",
+        "retrieved_response": "Refund policies vary depending on the software provider. It's best to check the refund policy on the website where you purchased the software or contact their customer support for assistance with a refund.",
+        "timestamp": "2026-04-12T12:55:10Z",
+        "confidence_score": 0.7
+    }
+]
