@@ -1,22 +1,24 @@
 # Automating Customer Support with OpenAI API 
 
-This project was focused on building a automated customer support system built using the OpenAI API.  
-It was developed as part of a practical exam for a DataCamp AI engineering project and refined for portfolio presentation.
+This project builds an automated customer support system using the OpenAI API.  
+Developed as part of a practical exam for a DataCamp AI engineering project and refined for portfolio presentation.
 
 The chatbot classifies customer queries, retrieves relevant responses using semantic search, and generates new answers when no suitable predefined response is found.
 
 ---
 
-## Project Overview
+## Architecture
 
-ChatSolveAI aims to improve customer support response times and consistency by using NLP, including:
+![System Architecture](assets/architecture.svg)
 
-- Text embeddings for semantic similarity
-- Cosine similarity based retrieval
-- OpenAI GPT models for response generation
-- Structured logging of chatbot interactions
+**How it works:**
 
-The solution is designed to resemble a real world customer support automation pipeline.
+1. A **customer query** is received as text input
+2. The query is converted into a vector using **OpenAI Embeddings** (`text-embedding-3-small`)
+3. **Cosine similarity** search finds the closest match in the knowledge base
+4. If a match is found above the confidence threshold, the **predefined response** is returned
+5. If no match is found, **GPT-3.5-turbo** generates a new response
+6. Every interaction is **logged** with timestamps and confidence scores
 
 ---
 
@@ -39,7 +41,7 @@ The solution is designed to resemble a real world customer support automation pi
   - `gpt-3.5-turbo`
 - **JSON** for structured data storage
 - **CSV** for datasets
-- Cosine similarity for semantic search
+- **Cosine similarity** for semantic search
 
 ---
 
